@@ -19,8 +19,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
 
   // Calculate discounted price if discount exists
   const getDiscountedPrice = () => {
-    if (!property.discount) return null;
-    const discount = parseFloat(property.discount) / 100;
+    if (property.discount === undefined || property.discount === 0) return null;
+    const discount = property.discount / 100;
     const discountedPrice = property.price * (1 - discount);
     return Math.round(discountedPrice);
   };

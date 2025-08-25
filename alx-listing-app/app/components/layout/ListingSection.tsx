@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import PropertyCard from './PropertyCard';
+import PropertyCard from '../property/PropertyCard';
 import { PROPERTYLISTINGSAMPLE } from '@/constants';
 
 interface ListingSectionProps {

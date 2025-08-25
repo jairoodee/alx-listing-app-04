@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import PropertyCard from "@/components/layout/PropertyCard";
+import PropertyCard from "@/components/property/PropertyCard";
 import { PropertyProps } from "@/interfaces";
 
 export default function Home() {
